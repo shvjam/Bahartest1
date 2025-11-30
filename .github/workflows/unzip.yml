@@ -7,24 +7,41 @@ jobs:
   unzip:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install unzip
+        run: sudo apt-get install unzip -y
+
+      - name: Show files in repo
+        run: ls -R .
+
       - name: Unzip Backend.zip
         run: |
-          mkdir -p Backend
-          unzip Backend.zip -d Backend
+          if [ -f Backend.zip ]; then
+            mkdir -p Backend
+            unzip -o Backend.zip -d Backend
+          else
+            echo "Backend.zip NOT FOUND"
+          fi
 
       - name: Unzip Front.zip
         run: |
-          mkdir -p Front
-          unzip Front.zip -d Front
+          if [ -f Front.zip ]; then
+            mkdir -p Front
+            unzip -o Front.zip -d Front
+          else
+            echo "Front.zip NOT FOUND"
+          fi
 
       - name: Commit changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Extracted zip files automatically" || echo "No changes to commit"
+          git commit -m "Extract zip files" || echo "No changes"
           git push
