@@ -1,0 +1,30 @@
+name: Unzip Files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Unzip Backend.zip
+        run: |
+          mkdir -p Backend
+          unzip Backend.zip -d Backend
+
+      - name: Unzip Front.zip
+        run: |
+          mkdir -p Front
+          unzip Front.zip -d Front
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Extracted zip files automatically" || echo "No changes to commit"
+          git push
