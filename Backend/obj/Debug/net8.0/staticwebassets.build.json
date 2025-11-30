@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "2dMz4agGb6VcZ1qSUGHXbxVedJl/odbeq0ES2e6Zwh4=",
+  "Source": "BarbariBahar.API",
+  "BasePath": "_content/BarbariBahar.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BarbariBahar.API\\wwwroot",
+      "Source": "BarbariBahar.API",
+      "ContentRoot": "D:\\shivaBahar\\باربری بهار وب اپلیکیشن\\backend_new\\wwwroot\\",
+      "BasePath": "_content/BarbariBahar.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,243 @@
+[2025-11-25 00:05:11.177 +03:30 INF] Executed DbCommand (524ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 00:05:11.820 +03:30 INF] Executed DbCommand (1,167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 00:05:12.763 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 00:05:15.107 +03:30 INF] HTTP GET /health responded 200 in 2348.5480 ms
+[2025-11-25 00:05:15.764 +03:30 INF] HTTP GET /health responded 200 in 54399.7742 ms
+[2025-11-25 00:05:15.764 +03:30 INF] HTTP GET /health responded 200 in 23412.5695 ms
+[2025-11-25 11:06:41.819 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 11:06:42.339 +03:30 INF] 🔄 Applying database migrations...
+[2025-11-25 11:06:42.809 +03:30 WRN] The foreign key property 'Driver.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:06:42.813 +03:30 WRN] The foreign key property 'DriverAssignment.OrderId1' was created in shadow state because a conflicting property with the simple name 'OrderId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:06:43.556 +03:30 INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:06:43.623 +03:30 INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:06:43.628 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:06:43.631 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:06:43.909 +03:30 INF] Executed DbCommand (265ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-11-25 11:06:43.923 +03:30 INF] No migrations were applied. The database is already up to date.
+[2025-11-25 11:06:43.925 +03:30 INF] ✅ Migrations applied successfully
+[2025-11-25 11:06:43.926 +03:30 INF] 🌱 Seeding initial data...
+[2025-11-25 11:06:44.054 +03:30 INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-11-25 11:06:44.066 +03:30 INF] ✅ Data seeded successfully
+[2025-11-25 11:06:44.150 +03:30 INF] 🚀 Barbari Bahar API Started Successfully
+[2025-11-25 11:06:44.151 +03:30 INF] 📡 Listening on: http://localhost:5000
+[2025-11-25 11:06:44.153 +03:30 INF] 📚 Swagger UI: http://localhost:5000/swagger
+[2025-11-25 11:06:44.154 +03:30 INF] 💚 Health Check: http://localhost:5000/health
+[2025-11-25 11:06:44.156 +03:30 INF] 🌍 Environment: Development
+[2025-11-25 11:06:44.227 +03:30 WRN] The WebRootPath was not found: D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\wwwroot. Static files may be unavailable.
+[2025-11-25 11:08:51.817 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 11:08:51.993 +03:30 INF] 🔄 Applying database migrations...
+[2025-11-25 11:08:52.472 +03:30 WRN] The foreign key property 'Driver.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:08:52.473 +03:30 WRN] The foreign key property 'DriverAssignment.OrderId1' was created in shadow state because a conflicting property with the simple name 'OrderId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:08:52.769 +03:30 INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:08:52.830 +03:30 INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:08:52.832 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:08:52.833 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:08:52.858 +03:30 INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-11-25 11:08:52.870 +03:30 INF] No migrations were applied. The database is already up to date.
+[2025-11-25 11:08:52.870 +03:30 INF] ✅ Migrations applied successfully
+[2025-11-25 11:08:52.870 +03:30 INF] 🌱 Seeding initial data...
+[2025-11-25 11:08:53.003 +03:30 INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-11-25 11:08:53.012 +03:30 INF] ✅ Data seeded successfully
+[2025-11-25 11:08:53.087 +03:30 INF] 🚀 Barbari Bahar API Started Successfully
+[2025-11-25 11:08:53.087 +03:30 INF] 📡 Listening on: http://localhost:5000
+[2025-11-25 11:08:53.087 +03:30 INF] 📚 Swagger UI: http://localhost:5000/swagger
+[2025-11-25 11:08:53.088 +03:30 INF] 💚 Health Check: http://localhost:5000/health
+[2025-11-25 11:08:53.088 +03:30 INF] 🌍 Environment: Development
+[2025-11-25 11:08:53.131 +03:30 WRN] The WebRootPath was not found: D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\wwwroot. Static files may be unavailable.
+[2025-11-25 11:09:01.196 +03:30 INF] HTTP GET /swagger responded 301 in 9.3043 ms
+[2025-11-25 11:09:01.245 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 40.2262 ms
+[2025-11-25 11:09:01.308 +03:30 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 42.3891 ms
+[2025-11-25 11:09:01.319 +03:30 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 9.8352 ms
+[2025-11-25 11:09:01.324 +03:30 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 53.4172 ms
+[2025-11-25 11:09:01.551 +03:30 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.2005 ms
+[2025-11-25 11:09:01.699 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 169.5736 ms
+[2025-11-25 11:56:01.860 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 11:56:01.951 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276
+[2025-11-25 11:56:45.699 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 11:56:46.356 +03:30 INF] 🔄 Applying database migrations...
+[2025-11-25 11:56:47.022 +03:30 WRN] The foreign key property 'Driver.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:56:47.025 +03:30 WRN] The foreign key property 'DriverAssignment.OrderId1' was created in shadow state because a conflicting property with the simple name 'OrderId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:56:47.488 +03:30 INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:56:47.517 +03:30 INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:56:47.520 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:56:47.522 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:56:47.557 +03:30 INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-11-25 11:56:47.573 +03:30 INF] No migrations were applied. The database is already up to date.
+[2025-11-25 11:56:47.575 +03:30 INF] ✅ Migrations applied successfully
+[2025-11-25 11:56:47.575 +03:30 INF] 🌱 Seeding initial data...
+[2025-11-25 11:56:47.743 +03:30 INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-11-25 11:56:47.755 +03:30 INF] ✅ Data seeded successfully
+[2025-11-25 11:56:47.901 +03:30 INF] 🚀 Barbari Bahar API Started Successfully
+[2025-11-25 11:56:47.903 +03:30 INF] 📡 Listening on: http://localhost:5000
+[2025-11-25 11:56:47.904 +03:30 INF] 📚 Swagger UI: http://localhost:5000/swagger
+[2025-11-25 11:56:47.905 +03:30 INF] 💚 Health Check: http://localhost:5000/health
+[2025-11-25 11:56:47.905 +03:30 INF] 🌍 Environment: Development
+[2025-11-25 11:56:48.004 +03:30 WRN] The WebRootPath was not found: D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\wwwroot. Static files may be unavailable.
+[2025-11-25 11:56:49.111 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:56:49.129 +03:30 INF] HTTP GET /health responded 200 in 921.2426 ms
+[2025-11-25 11:56:56.864 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:56:56.867 +03:30 INF] HTTP GET /health responded 200 in 49.4398 ms
+[2025-11-25 11:56:57.006 +03:30 INF] HTTP GET /favicon.ico responded 404 in 3.0268 ms
+[2025-11-25 11:57:06.120 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 27.5079 ms
+[2025-11-25 11:57:06.409 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 46.4845 ms
+[2025-11-25 11:57:16.663 +03:30 INF] HTTP GET / responded 200 in 4.7063 ms
+[2025-11-25 11:57:46.602 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:57:46.603 +03:30 INF] HTTP GET /health responded 200 in 4.3981 ms
+[2025-11-25 11:58:46.309 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:58:46.311 +03:30 INF] HTTP GET /health responded 200 in 3.8179 ms
+[2025-11-25 11:59:31.470 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 11:59:31.992 +03:30 INF] 🔄 Applying database migrations...
+[2025-11-25 11:59:32.572 +03:30 WRN] The foreign key property 'Driver.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:59:32.575 +03:30 WRN] The foreign key property 'DriverAssignment.OrderId1' was created in shadow state because a conflicting property with the simple name 'OrderId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-25 11:59:32.984 +03:30 INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:59:33.036 +03:30 INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:59:33.040 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:59:33.042 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-25 11:59:33.066 +03:30 INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-11-25 11:59:33.080 +03:30 INF] No migrations were applied. The database is already up to date.
+[2025-11-25 11:59:33.081 +03:30 INF] ✅ Migrations applied successfully
+[2025-11-25 11:59:33.082 +03:30 INF] 🌱 Seeding initial data...
+[2025-11-25 11:59:33.227 +03:30 INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-11-25 11:59:33.240 +03:30 INF] ✅ Data seeded successfully
+[2025-11-25 11:59:33.369 +03:30 INF] 🚀 Barbari Bahar API Started Successfully
+[2025-11-25 11:59:33.371 +03:30 INF] 📡 Listening on: http://localhost:5000
+[2025-11-25 11:59:33.372 +03:30 INF] 📚 Swagger UI: http://localhost:5000/swagger
+[2025-11-25 11:59:33.372 +03:30 INF] 💚 Health Check: http://localhost:5000/health
+[2025-11-25 11:59:33.372 +03:30 INF] 🌍 Environment: Development
+[2025-11-25 11:59:33.462 +03:30 WRN] The WebRootPath was not found: D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\wwwroot. Static files may be unavailable.
+[2025-11-25 11:59:42.954 +03:30 INF] HTTP GET / responded 200 in 71.3982 ms
+[2025-11-25 11:59:45.628 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 28.1406 ms
+[2025-11-25 11:59:45.775 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 56.3257 ms
+[2025-11-25 11:59:46.631 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 11:59:46.642 +03:30 INF] HTTP GET /health responded 200 in 32.6826 ms
+[2025-11-25 12:00:46.362 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-25 12:00:46.363 +03:30 INF] HTTP GET /health responded 200 in 53.2555 ms
+[2025-11-25 15:07:12.781 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 15:07:12.883 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276
+[2025-11-25 15:07:25.324 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 15:07:25.411 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276
+[2025-11-25 15:16:00.305 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 15:16:00.396 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276
+[2025-11-25 15:16:06.390 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 15:16:06.480 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276
+[2025-11-25 16:49:21.628 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 16:49:21.730 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276
+[2025-11-25 16:49:28.802 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-25 16:49:28.892 +03:30 FTL] ❌ Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\shivaBahar\باربری بهار وب اپلیکیشن\backend_new\Program.cs:line 276

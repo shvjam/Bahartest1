@@ -1,0 +1,10 @@
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using Microsoft.EntityFrameworkCore;
+global using BarbariBahar.API.Models;
+global using BarbariBahar.API.Enums;
+global using BarbariBahar.API.Data;
+global using BarbariBahar.API.Services;
+global using BarbariBahar.API.Services.Interfaces;

@@ -1,0 +1,695 @@
+[2025-11-29 17:55:00.682 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-29 17:55:01.859 +03:30 INF] 🔄 Applying database migrations...
+[2025-11-29 17:55:02.500 +03:30 WRN] The foreign key property 'DriverAssignment.OrderId1' was created in shadow state because a conflicting property with the simple name 'OrderId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-29 17:55:03.428 +03:30 INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 17:55:03.459 +03:30 INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-29 17:55:03.466 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 17:55:03.469 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-29 17:55:03.483 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-11-29 17:55:03.498 +03:30 INF] No migrations were applied. The database is already up to date.
+[2025-11-29 17:55:03.500 +03:30 INF] ✅ Migrations applied successfully
+[2025-11-29 17:55:03.500 +03:30 INF] 🌱 Seeding initial data...
+[2025-11-29 17:55:03.650 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-11-29 17:55:04.197 +03:30 INF] Executed DbCommand (84ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 1000), @p3='?' (Size = 100), @p4='?' (DbType = Boolean), @p5='?' (Size = 200), @p6='?' (DbType = Int32), @p7='?' (Size = 200), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Guid), @p10='?' (DbType = DateTime2), @p11='?' (Size = 1000), @p12='?' (Size = 100), @p13='?' (DbType = Boolean), @p14='?' (Size = 200), @p15='?' (DbType = Int32), @p16='?' (Size = 200), @p17='?' (DbType = DateTime2), @p18='?' (DbType = Guid), @p19='?' (DbType = DateTime2), @p20='?' (Size = 1000), @p21='?' (Size = 100), @p22='?' (DbType = Boolean), @p23='?' (Size = 200), @p24='?' (DbType = Int32), @p25='?' (Size = 200), @p26='?' (DbType = DateTime2), @p27='?' (DbType = Guid), @p28='?' (DbType = DateTime2), @p29='?' (Size = 1000), @p30='?' (Size = 100), @p31='?' (DbType = Boolean), @p32='?' (Size = 200), @p33='?' (DbType = Int32), @p34='?' (Size = 200), @p35='?' (DbType = DateTime2), @p36='?' (DbType = Guid), @p37='?' (Size = 50), @p38='?' (DbType = DateTime2), @p39='?' (Size = 500), @p40='?' (DbType = Int32), @p41='?' (DbType = DateTime2), @p42='?' (DbType = Boolean), @p43='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p44='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p45='?' (DbType = Int32), @p46='?' (DbType = DateTime2), @p47='?' (Size = 20), @p48='?' (DbType = DateTime2), @p49='?' (DbType = Int32), @p50='?' (DbType = Int32), @p51='?' (DbType = Int32), @p52='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p53='?' (DbType = Guid), @p54='?' (Size = 50), @p55='?' (DbType = DateTime2), @p56='?' (Size = 500), @p57='?' (DbType = Int32), @p58='?' (DbType = DateTime2), @p59='?' (DbType = Boolean), @p60='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p61='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p62='?' (DbType = Int32), @p63='?' (DbType = DateTime2), @p64='?' (Size = 20), @p65='?' (DbType = DateTime2), @p66='?' (DbType = Int32), @p67='?' (DbType = Int32), @p68='?' (DbType = Int32), @p69='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p70='?' (DbType = Guid), @p71='?' (Size = 100), @p72='?' (DbType = DateTime2), @p73='?' (Size = 1000), @p74='?' (Size = 500), @p75='?' (Size = 500), @p76='?' (DbType = Boolean), @p77='?' (Size = 200), @p78='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p79='?' (DbType = Int32), @p80='?' (Size = 50), @p81='?' (DbType = DateTime2), @p82='?' (DbType = Guid), @p83='?' (Size = 100), @p84='?' (DbType = DateTime2), @p85='?' (Size = 1000), @p86='?' (Size = 500), @p87='?' (Size = 500), @p88='?' (DbType = Boolean), @p89='?' (Size = 200), @p90='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p91='?' (DbType = Int32), @p92='?' (Size = 50), @p93='?' (DbType = DateTime2), @p94='?' (DbType = Guid), @p95='?' (Size = 100), @p96='?' (DbType = DateTime2), @p97='?' (Size = 1000), @p98='?' (Size = 500), @p99='?' (Size = 500), @p100='?' (DbType = Boolean), @p101='?' (Size = 200), @p102='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p103='?' (DbType = Int32), @p104='?' (Size = 50), @p105='?' (DbType = DateTime2), @p106='?' (DbType = Guid), @p107='?' (Size = 100), @p108='?' (DbType = DateTime2), @p109='?' (Size = 1000), @p110='?' (Size = 500), @p111='?' (Size = 500), @p112='?' (DbType = Boolean), @p113='?' (Size = 200), @p114='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p115='?' (DbType = Int32), @p116='?' (Size = 50), @p117='?' (DbType = DateTime2), @p118='?' (DbType = Guid), @p119='?' (Size = 100), @p120='?' (DbType = DateTime2), @p121='?' (Size = 1000), @p122='?' (Size = 500), @p123='?' (Size = 500), @p124='?' (DbType = Boolean), @p125='?' (Size = 200), @p126='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p127='?' (DbType = Int32), @p128='?' (Size = 50), @p129='?' (DbType = DateTime2), @p130='?' (DbType = Guid), @p131='?' (Size = 100), @p132='?' (DbType = DateTime2), @p133='?' (Size = 1000), @p134='?' (Size = 500), @p135='?' (Size = 500), @p136='?' (DbType = Boolean), @p137='?' (Size = 200), @p138='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p139='?' (DbType = Int32), @p140='?' (Size = 50), @p141='?' (DbType = DateTime2), @p142='?' (DbType = Guid), @p143='?' (Size = 100), @p144='?' (DbType = DateTime2), @p145='?' (Size = 1000), @p146='?' (Size = 500), @p147='?' (Size = 500), @p148='?' (DbType = Boolean), @p149='?' (Size = 200), @p150='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p151='?' (DbType = Int32), @p152='?' (Size = 50), @p153='?' (DbType = DateTime2), @p154='?' (DbType = Guid), @p155='?' (Size = 100), @p156='?' (DbType = DateTime2), @p157='?' (Size = 1000), @p158='?' (Size = 500), @p159='?' (Size = 500), @p160='?' (DbType = Boolean), @p161='?' (Size = 200), @p162='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p163='?' (DbType = Int32), @p164='?' (Size = 50), @p165='?' (DbType = DateTime2), @p166='?' (DbType = Guid), @p167='?' (Size = 100), @p168='?' (DbType = DateTime2), @p169='?' (Size = 1000), @p170='?' (Size = 500), @p171='?' (Size = 500), @p172='?' (DbType = Boolean), @p173='?' (Size = 200), @p174='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p175='?' (DbType = Int32), @p176='?' (Size = 50), @p177='?' (DbType = DateTime2), @p178='?' (DbType = Guid), @p179='?' (Size = 100), @p180='?' (DbType = DateTime2), @p181='?' (Size = 1000), @p182='?' (Size = 500), @p183='?' (Size = 500), @p184='?' (DbType = Boolean), @p185='?' (Size = 200), @p186='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p187='?' (DbType = Int32), @p188='?' (Size = 50), @p189='?' (DbType = DateTime2), @p190='?' (DbType = Guid), @p191='?' (Size = 100), @p192='?' (DbType = DateTime2), @p193='?' (Size = 1000), @p194='?' (Size = 500), @p195='?' (Size = 500), @p196='?' (DbType = Boolean), @p197='?' (Size = 200), @p198='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p199='?' (DbType = Int32), @p200='?' (Size = 50), @p201='?' (DbType = DateTime2), @p202='?' (DbType = Guid), @p203='?' (Size = 100), @p204='?' (DbType = DateTime2), @p205='?' (Size = 1000), @p206='?' (Size = 500), @p207='?' (Size = 500), @p208='?' (DbType = Boolean), @p209='?' (Size = 200), @p210='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p211='?' (DbType = Int32), @p212='?' (Size = 50), @p213='?' (DbType = DateTime2), @p214='?' (DbType = Guid), @p215='?' (Size = 4000), @p216='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p217='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p218='?' (DbType = DateTime2), @p219='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p220='?' (DbType = Boolean), @p221='?' (DbType = Boolean), @p222='?' (Size = 100), @p223='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p224='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p225='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p226='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p227='?' (DbType = Int32), @p228='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p229='?' (DbType = DateTime2), @p230='?' (Size = 4000), @p231='?' (Size = 4000), @p232='?' (DbType = Guid), @p233='?' (Size = 1000), @p234='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p235='?' (DbType = DateTime2), @p236='?' (Size = 1000), @p237='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p238='?' (Size = 4000), @p239='?' (Size = 100), @p240='?' (Size = 500), @p241='?' (DbType = Boolean), @p242='?' (DbType = Boolean), @p243='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p244='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p245='?' (Size = 200), @p246='?' (DbType = Int32), @p247='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p248='?' (DbType = Int32), @p249='?' (Size = 500), @p250='?' (Size = 200), @p251='?' (DbType = DateTime2), @p252='?' (DbType = Guid), @p253='?' (Size = 1000), @p254='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p255='?' (DbType = DateTime2), @p256='?' (Size = 1000), @p257='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p258='?' (Size = 4000), @p259='?' (Size = 100), @p260='?' (Size = 500), @p261='?' (DbType = Boolean), @p262='?' (DbType = Boolean), @p263='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p264='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p265='?' (Size = 200), @p266='?' (DbType = Int32), @p267='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p268='?' (DbType = Int32), @p269='?' (Size = 500), @p270='?' (Size = 200), @p271='?' (DbType = DateTime2), @p272='?' (DbType = Guid), @p273='?' (Size = 1000), @p274='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p275='?' (DbType = DateTime2), @p276='?' (Size = 1000), @p277='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p278='?' (Size = 4000), @p279='?' (Size = 100), @p280='?' (Size = 500), @p281='?' (DbType = Boolean), @p282='?' (DbType = Boolean), @p283='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p284='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p285='?' (Size = 200), @p286='?' (DbType = Int32), @p287='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p288='?' (DbType = Int32), @p289='?' (Size = 500), @p290='?' (Size = 200), @p291='?' (DbType = DateTime2), @p292='?' (DbType = Guid), @p293='?' (Size = 1000), @p294='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p295='?' (DbType = DateTime2), @p296='?' (Size = 1000), @p297='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p298='?' (Size = 4000), @p299='?' (Size = 100), @p300='?' (Size = 500), @p301='?' (DbType = Boolean), @p302='?' (DbType = Boolean), @p303='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p304='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p305='?' (Size = 200), @p306='?' (DbType = Int32), @p307='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p308='?' (DbType = Int32), @p309='?' (Size = 500), @p310='?' (Size = 200), @p311='?' (DbType = DateTime2), @p312='?' (DbType = Guid), @p313='?' (Size = 1000), @p314='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p315='?' (DbType = DateTime2), @p316='?' (Size = 1000), @p317='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p318='?' (Size = 4000), @p319='?' (Size = 100), @p320='?' (Size = 500), @p321='?' (DbType = Boolean), @p322='?' (DbType = Boolean), @p323='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p324='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p325='?' (Size = 200), @p326='?' (DbType = Int32), @p327='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p328='?' (DbType = Int32), @p329='?' (Size = 500), @p330='?' (Size = 200), @p331='?' (DbType = DateTime2), @p332='?' (DbType = Guid), @p333='?' (Size = 1000), @p334='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p335='?' (DbType = DateTime2), @p336='?' (Size = 1000), @p337='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p338='?' (Size = 4000), @p339='?' (Size = 100), @p340='?' (Size = 500), @p341='?' (DbType = Boolean), @p342='?' (DbType = Boolean), @p343='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p344='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p345='?' (Size = 200), @p346='?' (DbType = Int32), @p347='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p348='?' (DbType = Int32), @p349='?' (Size = 500), @p350='?' (Size = 200), @p351='?' (DbType = DateTime2), @p352='?' (DbType = Guid), @p353='?' (Size = 1000), @p354='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p355='?' (DbType = DateTime2), @p356='?' (Size = 1000), @p357='?' (Precision = 5) (Scale = 2) (DbType = Decimal), @p358='?' (Size = 4000), @p359='?' (Size = 100), @p360='?' (Size = 500), @p361='?' (DbType = Boolean), @p362='?' (DbType = Boolean), @p363='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p364='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p365='?' (Size = 200), @p366='?' (DbType = Int32), @p367='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p368='?' (DbType = Int32), @p369='?' (Size = 500), @p370='?' (Size = 200), @p371='?' (DbType = DateTime2), @p372='?' (DbType = Guid), @p373='?' (Size = 500), @p374='?' (DbType = DateTime2), @p375='?' (DbType = DateTime2), @p376='?' (Size = 200), @p377='?' (Size = 100), @p378='?' (DbType = Boolean), @p379='?' (DbType = DateTime2), @p380='?' (Size = 11), @p381='?' (Size = 15), @p382='?' (Size = 500), @p383='?' (DbType = Int32), @p384='?' (DbType = DateTime2), @p385='?' (DbType = Guid), @p386='?' (Size = 500), @p387='?' (DbType = DateTime2), @p388='?' (DbType = DateTime2), @p389='?' (Size = 200), @p390='?' (Size = 100), @p391='?' (DbType = Boolean), @p392='?' (DbType = DateTime2), @p393='?' (Size = 11), @p394='?' (Size = 15), @p395='?' (Size = 500), @p396='?' (DbType = Int32), @p397='?' (DbType = DateTime2), @p398='?' (DbType = Guid), @p399='?' (Size = 500), @p400='?' (DbType = DateTime2), @p401='?' (DbType = DateTime2), @p402='?' (Size = 200), @p403='?' (Size = 100), @p404='?' (DbType = Boolean), @p405='?' (DbType = DateTime2), @p406='?' (Size = 11), @p407='?' (Size = 15), @p408='?' (Size = 500), @p409='?' (DbType = Int32), @p410='?' (DbType = DateTime2), @p411='?' (DbType = Guid), @p412='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p413='?' (DbType = Guid), @p414='?' (DbType = DateTime2), @p415='?' (Size = 1000), @p416='?' (Size = 500), @p417='?' (DbType = Boolean), @p418='?' (DbType = Boolean), @p419='?' (Size = 200), @p420='?' (DbType = Int32), @p421='?' (DbType = Boolean), @p422='?' (Size = 50), @p423='?' (DbType = DateTime2), @p424='?' (DbType = Guid), @p425='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p426='?' (DbType = Guid), @p427='?' (DbType = DateTime2), @p428='?' (Size = 1000), @p429='?' (Size = 500), @p430='?' (DbType = Boolean), @p431='?' (DbType = Boolean), @p432='?' (Size = 200), @p433='?' (DbType = Int32), @p434='?' (DbType = Boolean), @p435='?' (Size = 50), @p436='?' (DbType = DateTime2), @p437='?' (DbType = Guid), @p438='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p439='?' (DbType = Guid), @p440='?' (DbType = DateTime2), @p441='?' (Size = 1000), @p442='?' (Size = 500), @p443='?' (DbType = Boolean), @p444='?' (DbType = Boolean), @p445='?' (Size = 200), @p446='?' (DbType = Int32), @p447='?' (DbType = Boolean), @p448='?' (Size = 50), @p449='?' (DbType = DateTime2), @p450='?' (DbType = Guid), @p451='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p452='?' (DbType = Guid), @p453='?' (DbType = DateTime2), @p454='?' (Size = 1000), @p455='?' (Size = 500), @p456='?' (DbType = Boolean), @p457='?' (DbType = Boolean), @p458='?' (Size = 200), @p459='?' (DbType = Int32), @p460='?' (DbType = Boolean), @p461='?' (Size = 50), @p462='?' (DbType = DateTime2), @p463='?' (DbType = Guid), @p464='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p465='?' (DbType = Guid), @p466='?' (DbType = DateTime2), @p467='?' (Size = 1000), @p468='?' (Size = 500), @p469='?' (DbType = Boolean), @p470='?' (DbType = Boolean), @p471='?' (Size = 200), @p472='?' (DbType = Int32), @p473='?' (DbType = Boolean), @p474='?' (Size = 50), @p475='?' (DbType = DateTime2), @p476='?' (DbType = Guid), @p477='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p478='?' (DbType = Guid), @p479='?' (DbType = DateTime2), @p480='?' (Size = 1000), @p481='?' (Size = 500), @p482='?' (DbType = Boolean), @p483='?' (DbType = Boolean), @p484='?' (Size = 200), @p485='?' (DbType = Int32), @p486='?' (DbType = Boolean), @p487='?' (Size = 50), @p488='?' (DbType = DateTime2), @p489='?' (DbType = Guid), @p490='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p491='?' (DbType = Guid), @p492='?' (DbType = DateTime2), @p493='?' (Size = 1000), @p494='?' (Size = 500), @p495='?' (DbType = Boolean), @p496='?' (DbType = Boolean), @p497='?' (Size = 200), @p498='?' (DbType = Int32), @p499='?' (DbType = Boolean), @p500='?' (Size = 50), @p501='?' (DbType = DateTime2), @p502='?' (DbType = Guid), @p503='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p504='?' (DbType = Guid), @p505='?' (DbType = DateTime2), @p506='?' (Size = 1000), @p507='?' (Size = 500), @p508='?' (DbType = Boolean), @p509='?' (DbType = Boolean), @p510='?' (Size = 200), @p511='?' (DbType = Int32), @p512='?' (DbType = Boolean), @p513='?' (Size = 50), @p514='?' (DbType = DateTime2), @p515='?' (DbType = Guid), @p516='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p517='?' (DbType = Guid), @p518='?' (DbType = DateTime2), @p519='?' (Size = 1000), @p520='?' (Size = 500), @p521='?' (DbType = Boolean), @p522='?' (DbType = Boolean), @p523='?' (Size = 200), @p524='?' (DbType = Int32), @p525='?' (DbType = Boolean), @p526='?' (Size = 50), @p527='?' (DbType = DateTime2), @p528='?' (DbType = Guid), @p529='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p530='?' (DbType = Guid), @p531='?' (DbType = DateTime2), @p532='?' (Size = 1000), @p533='?' (Size = 500), @p534='?' (DbType = Boolean), @p535='?' (DbType = Boolean), @p536='?' (Size = 200), @p537='?' (DbType = Int32), @p538='?' (DbType = Boolean), @p539='?' (Size = 50), @p540='?' (DbType = DateTime2), @p541='?' (DbType = Guid), @p542='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p543='?' (DbType = Guid), @p544='?' (DbType = DateTime2), @p545='?' (Size = 1000), @p546='?' (Size = 500), @p547='?' (DbType = Boolean), @p548='?' (DbType = Boolean), @p549='?' (Size = 200), @p550='?' (DbType = Int32), @p551='?' (DbType = Boolean), @p552='?' (Size = 50), @p553='?' (DbType = DateTime2), @p554='?' (DbType = Guid), @p555='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p556='?' (DbType = Guid), @p557='?' (DbType = DateTime2), @p558='?' (Size = 1000), @p559='?' (Size = 500), @p560='?' (DbType = Boolean), @p561='?' (DbType = Boolean), @p562='?' (Size = 200), @p563='?' (DbType = Int32), @p564='?' (DbType = Boolean), @p565='?' (Size = 50), @p566='?' (DbType = DateTime2), @p567='?' (DbType = Guid), @p568='?' (DbType = Int32), @p569='?' (Size = 100), @p570='?' (Size = 50), @p571='?' (Size = 50), @p572='?' (DbType = Int32), @p573='?' (DbType = Int32), @p574='?' (DbType = Int32), @p575='?' (DbType = Int32), @p576='?' (DbType = DateTime2), @p577='?' (Precision = 10) (Scale = 8) (DbType = Decimal), @p578='?' (Precision = 11) (Scale = 8) (DbType = Decimal), @p579='?' (DbType = Boolean), @p580='?' (DbType = DateTime2), @p581='?' (Size = 500), @p582='?' (Size = 50), @p583='?' (Size = 500), @p584='?' (DbType = Boolean), @p585='?' (DbType = Boolean), @p586='?' (DbType = Boolean), @p587='?' (DbType = DateTime2), @p588='?' (Size = 20), @p589='?' (Precision = 3) (Scale = 2) (DbType = Decimal), @p590='?' (Size = 10), @p591='?' (DbType = Int32), @p592='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p593='?' (DbType = Int32), @p594='?' (DbType = Int32), @p595='?' (DbType = DateTime2), @p596='?' (DbType = Guid), @p597='?' (Size = 500), @p598='?' (Size = 30), @p599='?' (Size = 50), @p600='?' (DbType = Int32), @p601='?' (DbType = Int32), @p602='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [CatalogCategories] ([Id], [CreatedAt], [Description], [Icon], [IsActive], [Name], [Order], [Slug], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8),
+(@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26),
+(@p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35);
+INSERT INTO [DiscountCodes] ([Id], [Code], [CreatedAt], [Description], [DiscountType], [EndDate], [IsActive], [MaxDiscount], [MinOrderAmount], [PerUserLimit], [StartDate], [Type], [UpdatedAt], [UsageCount], [UsageLimit], [UsedCount], [Value])
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44, @p45, @p46, @p47, @p48, @p49, @p50, @p51, @p52),
+(@p53, @p54, @p55, @p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, @p64, @p65, @p66, @p67, @p68, @p69);
+INSERT INTO [PackingProducts] ([Id], [Category], [CreatedAt], [Description], [Image], [ImageUrl], [IsActive], [Name], [Price], [Stock], [Unit], [UpdatedAt])
+VALUES (@p70, @p71, @p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, @p80, @p81),
+(@p82, @p83, @p84, @p85, @p86, @p87, @p88, @p89, @p90, @p91, @p92, @p93),
+(@p94, @p95, @p96, @p97, @p98, @p99, @p100, @p101, @p102, @p103, @p104, @p105),
+(@p106, @p107, @p108, @p109, @p110, @p111, @p112, @p113, @p114, @p115, @p116, @p117),
+(@p118, @p119, @p120, @p121, @p122, @p123, @p124, @p125, @p126, @p127, @p128, @p129),
+(@p130, @p131, @p132, @p133, @p134, @p135, @p136, @p137, @p138, @p139, @p140, @p141),
+(@p142, @p143, @p144, @p145, @p146, @p147, @p148, @p149, @p150, @p151, @p152, @p153),
+(@p154, @p155, @p156, @p157, @p158, @p159, @p160, @p161, @p162, @p163, @p164, @p165),
+(@p166, @p167, @p168, @p169, @p170, @p171, @p172, @p173, @p174, @p175, @p176, @p177),
+(@p178, @p179, @p180, @p181, @p182, @p183, @p184, @p185, @p186, @p187, @p188, @p189),
+(@p190, @p191, @p192, @p193, @p194, @p195, @p196, @p197, @p198, @p199, @p200, @p201),
+(@p202, @p203, @p204, @p205, @p206, @p207, @p208, @p209, @p210, @p211, @p212, @p213);
+INSERT INTO [PricingConfigs] ([Id], [BaseVehicleRatesJson], [BaseWorkerRate], [CancellationFee], [CreatedAt], [ExpertVisitFee], [IncludePackingMaterialsInInvoice], [IsActive], [Name], [PackingHourlyRate], [PackingMaterialsEstimatedCost], [PerFloorRate], [PerKmRate], [ServiceType], [StopRate], [UpdatedAt], [WalkingDistanceRatesJson], [WorkerRatesByVehicleJson])
+VALUES (@p214, @p215, @p216, @p217, @p218, @p219, @p220, @p221, @p222, @p223, @p224, @p225, @p226, @p227, @p228, @p229, @p230, @p231);
+INSERT INTO [ServiceCategories] ([Id], [AdminNote], [BasePrice], [CreatedAt], [Description], [DiscountPercentage], [FeaturesJson], [Icon], [ImageUrl], [IsActive], [IsFeatured], [MaxPrice], [MinPrice], [Name], [Order], [PricePerKm], [ServiceType], [ShortDescription], [Slug], [UpdatedAt])
+VALUES (@p232, @p233, @p234, @p235, @p236, @p237, @p238, @p239, @p240, @p241, @p242, @p243, @p244, @p245, @p246, @p247, @p248, @p249, @p250, @p251),
+(@p252, @p253, @p254, @p255, @p256, @p257, @p258, @p259, @p260, @p261, @p262, @p263, @p264, @p265, @p266, @p267, @p268, @p269, @p270, @p271),
+(@p272, @p273, @p274, @p275, @p276, @p277, @p278, @p279, @p280, @p281, @p282, @p283, @p284, @p285, @p286, @p287, @p288, @p289, @p290, @p291),
+(@p292, @p293, @p294, @p295, @p296, @p297, @p298, @p299, @p300, @p301, @p302, @p303, @p304, @p305, @p306, @p307, @p308, @p309, @p310, @p311),
+(@p312, @p313, @p314, @p315, @p316, @p317, @p318, @p319, @p320, @p321, @p322, @p323, @p324, @p325, @p326, @p327, @p328, @p329, @p330, @p331),
+(@p332, @p333, @p334, @p335, @p336, @p337, @p338, @p339, @p340, @p341, @p342, @p343, @p344, @p345, @p346, @p347, @p348, @p349, @p350, @p351),
+(@p352, @p353, @p354, @p355, @p356, @p357, @p358, @p359, @p360, @p361, @p362, @p363, @p364, @p365, @p366, @p367, @p368, @p369, @p370, @p371);
+INSERT INTO [Users] ([Id], [AvatarUrl], [CreatedAt], [DateOfBirth], [Email], [FullName], [IsActive], [LastLoginAt], [NationalId], [PhoneNumber], [ProfileImage], [Role], [UpdatedAt])
+VALUES (@p372, @p373, @p374, @p375, @p376, @p377, @p378, @p379, @p380, @p381, @p382, @p383, @p384),
+(@p385, @p386, @p387, @p388, @p389, @p390, @p391, @p392, @p393, @p394, @p395, @p396, @p397),
+(@p398, @p399, @p400, @p401, @p402, @p403, @p404, @p405, @p406, @p407, @p408, @p409, @p410);
+INSERT INTO [CatalogItems] ([Id], [BasePrice], [CategoryId], [CreatedAt], [Description], [Image], [IsActive], [IsHeavy], [Name], [Order], [RequiresSpecialHandling], [Unit], [UpdatedAt])
+VALUES (@p411, @p412, @p413, @p414, @p415, @p416, @p417, @p418, @p419, @p420, @p421, @p422, @p423),
+(@p424, @p425, @p426, @p427, @p428, @p429, @p430, @p431, @p432, @p433, @p434, @p435, @p436),
+(@p437, @p438, @p439, @p440, @p441, @p442, @p443, @p444, @p445, @p446, @p447, @p448, @p449),
+(@p450, @p451, @p452, @p453, @p454, @p455, @p456, @p457, @p458, @p459, @p460, @p461, @p462),
+(@p463, @p464, @p465, @p466, @p467, @p468, @p469, @p470, @p471, @p472, @p473, @p474, @p475),
+(@p476, @p477, @p478, @p479, @p480, @p481, @p482, @p483, @p484, @p485, @p486, @p487, @p488),
+(@p489, @p490, @p491, @p492, @p493, @p494, @p495, @p496, @p497, @p498, @p499, @p500, @p501),
+(@p502, @p503, @p504, @p505, @p506, @p507, @p508, @p509, @p510, @p511, @p512, @p513, @p514),
+(@p515, @p516, @p517, @p518, @p519, @p520, @p521, @p522, @p523, @p524, @p525, @p526, @p527),
+(@p528, @p529, @p530, @p531, @p532, @p533, @p534, @p535, @p536, @p537, @p538, @p539, @p540),
+(@p541, @p542, @p543, @p544, @p545, @p546, @p547, @p548, @p549, @p550, @p551, @p552, @p553),
+(@p554, @p555, @p556, @p557, @p558, @p559, @p560, @p561, @p562, @p563, @p564, @p565, @p566);
+INSERT INTO [Drivers] ([Id], [AvailableWorkers], [BankAccountHolder], [BankAccountNumber], [BankName], [CancelledRides], [CancelledTrips], [CompletedRides], [CompletedTrips], [CreatedAt], [CurrentLatitude], [CurrentLongitude], [DocumentsVerified], [DriverLicenseExpiry], [DriverLicenseImage], [DriverLicenseNumber], [InsuranceImage], [IsActive], [IsAvailable], [IsVerified], [LastLocationUpdate], [LicensePlate], [Rating], [ShabaNumber], [Status], [TotalEarnings], [TotalRides], [TotalTrips], [UpdatedAt], [UserId], [VehicleCardImage], [VehicleColor], [VehicleModel], [VehicleType], [VehicleYear], [VerifiedAt])
+VALUES (@p567, @p568, @p569, @p570, @p571, @p572, @p573, @p574, @p575, @p576, @p577, @p578, @p579, @p580, @p581, @p582, @p583, @p584, @p585, @p586, @p587, @p588, @p589, @p590, @p591, @p592, @p593, @p594, @p595, @p596, @p597, @p598, @p599, @p600, @p601, @p602);
+[2025-11-29 17:55:04.221 +03:30 INF] ✅ Data seeded successfully
+[2025-11-29 17:55:04.367 +03:30 INF] 🚀 Barbari Bahar API Started Successfully
+[2025-11-29 17:55:04.369 +03:30 INF] 📡 Listening on: http://localhost:5000
+[2025-11-29 17:55:04.370 +03:30 INF] 📚 Swagger UI: http://localhost:5000/swagger
+[2025-11-29 17:55:04.370 +03:30 INF] 💚 Health Check: http://localhost:5000/health
+[2025-11-29 17:55:04.371 +03:30 INF] 🌍 Environment: Development
+[2025-11-29 17:55:09.493 +03:30 INF] HTTP GET /swagger responded 301 in 3.1894 ms
+[2025-11-29 17:55:09.547 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 32.0532 ms
+[2025-11-29 17:55:09.608 +03:30 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 37.8491 ms
+[2025-11-29 17:55:09.608 +03:30 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 42.2218 ms
+[2025-11-29 17:55:09.625 +03:30 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 58.5965 ms
+[2025-11-29 17:55:09.851 +03:30 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.2175 ms
+[2025-11-29 17:55:09.897 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 62.3019 ms
+[2025-11-29 18:28:16.474 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 0.6172 ms
+[2025-11-29 18:28:16.752 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 39.1181 ms
+[2025-11-29 21:00:14.191 +03:30 INF] 🚀 Starting Barbari Bahar API...
+[2025-11-29 21:00:15.096 +03:30 INF] 🔄 Applying database migrations...
+[2025-11-29 21:00:15.702 +03:30 WRN] The foreign key property 'DriverAssignment.OrderId1' was created in shadow state because a conflicting property with the simple name 'OrderId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2025-11-29 21:00:16.598 +03:30 INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:00:16.651 +03:30 INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-29 21:00:16.656 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:00:16.657 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-11-29 21:00:16.684 +03:30 INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-11-29 21:00:16.698 +03:30 INF] No migrations were applied. The database is already up to date.
+[2025-11-29 21:00:16.700 +03:30 INF] ✅ Migrations applied successfully
+[2025-11-29 21:00:16.700 +03:30 INF] 🌱 Seeding initial data...
+[2025-11-29 21:00:16.863 +03:30 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-11-29 21:00:16.881 +03:30 INF] ✅ Data seeded successfully
+[2025-11-29 21:00:17.007 +03:30 INF] 🚀 Barbari Bahar API Started Successfully
+[2025-11-29 21:00:17.009 +03:30 INF] 📡 Listening on: http://localhost:5000
+[2025-11-29 21:00:17.010 +03:30 INF] 📚 Swagger UI: http://localhost:5000/swagger
+[2025-11-29 21:00:17.011 +03:30 INF] 💚 Health Check: http://localhost:5000/health
+[2025-11-29 21:00:17.011 +03:30 INF] 🌍 Environment: Development
+[2025-11-29 21:00:18.095 +03:30 INF] HTTP OPTIONS /api/auth/send-otp responded 204 in 4.0120 ms
+[2025-11-29 21:00:19.494 +03:30 INF] Executed DbCommand (53ms) [Parameters=[@__phoneNumber_0='?' (Size = 15)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [u].[Id], [u].[AvatarUrl], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FullName], [u].[IsActive], [u].[LastLoginAt], [u].[NationalId], [u].[PhoneNumber], [u].[ProfileImage], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[PhoneNumber] = @__phoneNumber_0
+[2025-11-29 21:00:19.637 +03:30 INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 500), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 200), @p5='?' (Size = 100), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (Size = 11), @p9='?' (Size = 15), @p10='?' (Size = 500), @p11='?' (DbType = Int32), @p12='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='60']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [AvatarUrl], [CreatedAt], [DateOfBirth], [Email], [FullName], [IsActive], [LastLoginAt], [NationalId], [PhoneNumber], [ProfileImage], [Role], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[2025-11-29 21:00:19.648 +03:30 INF] User Action: USER_CREATED by User d68e37eb-c9b4-4a75-9d7a-7c1b537b033b from 127.0.0.1. Details: Phone: 09175114207
+[2025-11-29 21:00:19.651 +03:30 INF] OTP Code for 09175114207: 689154 (Development Mode)
+[2025-11-29 21:00:19.660 +03:30 INF] HTTP POST /api/auth/send-otp responded 200 in 1550.9882 ms
+[2025-11-29 21:00:21.643 +03:30 INF] Executed DbCommand (2ms) [Parameters=[@__phoneNumber_0='?' (Size = 15)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [u].[Id], [u].[AvatarUrl], [u].[CreatedAt], [u].[DateOfBirth], [u].[Email], [u].[FullName], [u].[IsActive], [u].[LastLoginAt], [u].[NationalId], [u].[PhoneNumber], [u].[ProfileImage], [u].[Role], [u].[UpdatedAt]
+FROM [Users] AS [u]
+WHERE [u].[PhoneNumber] = @__phoneNumber_0
+[2025-11-29 21:00:21.648 +03:30 INF] OTP Code for 09175114207: 795340 (Development Mode)
+[2025-11-29 21:00:21.650 +03:30 INF] HTTP POST /api/auth/send-otp responded 200 in 60.1108 ms
+[2025-11-29 21:00:29.200 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 30.6678 ms
+[2025-11-29 21:00:29.407 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 38.7316 ms
+[2025-11-29 21:00:30.798 +03:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:00:30.808 +03:30 INF] HTTP GET /health responded 200 in 34.8140 ms
+[2025-11-29 21:01:01.025 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:01:01.027 +03:30 INF] HTTP GET /health responded 200 in 6.0213 ms
+[2025-11-29 21:01:30.751 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:01:30.755 +03:30 INF] HTTP GET /health responded 200 in 5.9359 ms
+[2025-11-29 21:02:00.753 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:02:00.755 +03:30 INF] HTTP GET /health responded 200 in 7.9251 ms
+[2025-11-29 21:02:22.532 +03:30 INF] HTTP GET /swagger/index.html responded 200 in 0.3423 ms
+[2025-11-29 21:02:22.674 +03:30 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 37.2591 ms
+[2025-11-29 21:02:31.020 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:02:31.023 +03:30 INF] HTTP GET /health responded 200 in 10.4702 ms
+[2025-11-29 21:03:01.007 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:03:01.012 +03:30 INF] HTTP GET /health responded 200 in 7.9803 ms
+[2025-11-29 21:03:31.008 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:03:31.012 +03:30 INF] HTTP GET /health responded 200 in 9.0245 ms
+[2025-11-29 21:04:01.002 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:04:01.005 +03:30 INF] HTTP GET /health responded 200 in 4.6708 ms
+[2025-11-29 21:05:01.017 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:05:01.020 +03:30 INF] HTTP GET /health responded 200 in 5.7519 ms
+[2025-11-29 21:06:01.010 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:06:01.012 +03:30 INF] HTTP GET /health responded 200 in 8.4316 ms
+[2025-11-29 21:07:01.007 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:07:01.014 +03:30 INF] HTTP GET /health responded 200 in 14.0833 ms
+[2025-11-29 21:08:01.002 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:08:01.009 +03:30 INF] HTTP GET /health responded 200 in 12.8730 ms
+[2025-11-29 21:09:01.008 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:09:01.012 +03:30 INF] HTTP GET /health responded 200 in 20.2627 ms
+[2025-11-29 21:10:00.997 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:10:01.002 +03:30 INF] HTTP GET /health responded 200 in 8.0907 ms
+[2025-11-29 21:11:00.999 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:11:01.001 +03:30 INF] HTTP GET /health responded 200 in 9.4530 ms
+[2025-11-29 21:12:00.991 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:12:00.995 +03:30 INF] HTTP GET /health responded 200 in 8.1063 ms
+[2025-11-29 21:13:01.295 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:13:01.302 +03:30 INF] HTTP GET /health responded 200 in 10.7511 ms
+[2025-11-29 21:14:00.994 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:14:01.002 +03:30 INF] HTTP GET /health responded 200 in 17.1567 ms
+[2025-11-29 21:15:00.984 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:15:00.987 +03:30 INF] HTTP GET /health responded 200 in 5.1159 ms
+[2025-11-29 21:16:00.992 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:16:00.997 +03:30 INF] HTTP GET /health responded 200 in 7.2164 ms
+[2025-11-29 21:17:00.987 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:17:00.993 +03:30 INF] HTTP GET /health responded 200 in 14.1972 ms
+[2025-11-29 21:18:00.990 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:18:00.992 +03:30 INF] HTTP GET /health responded 200 in 9.0113 ms
+[2025-11-29 21:19:00.990 +03:30 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:19:01.002 +03:30 INF] HTTP GET /health responded 200 in 18.0245 ms
+[2025-11-29 21:20:00.986 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:20:00.990 +03:30 INF] HTTP GET /health responded 200 in 8.7971 ms
+[2025-11-29 21:21:00.983 +03:30 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:21:00.984 +03:30 INF] HTTP GET /health responded 200 in 9.1154 ms
+[2025-11-29 21:22:01.005 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:22:01.007 +03:30 INF] HTTP GET /health responded 200 in 33.1709 ms
+[2025-11-29 21:23:00.978 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:23:00.984 +03:30 INF] HTTP GET /health responded 200 in 14.0809 ms
+[2025-11-29 21:24:00.992 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:24:00.994 +03:30 INF] HTTP GET /health responded 200 in 31.1295 ms
+[2025-11-29 21:25:00.977 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:25:00.978 +03:30 INF] HTTP GET /health responded 200 in 8.4520 ms
+[2025-11-29 21:26:00.997 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:26:01.002 +03:30 INF] HTTP GET /health responded 200 in 35.8074 ms
+[2025-11-29 21:27:00.964 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:27:00.966 +03:30 INF] HTTP GET /health responded 200 in 6.8441 ms
+[2025-11-29 21:28:00.966 +03:30 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:28:00.968 +03:30 INF] HTTP GET /health responded 200 in 9.0609 ms
+[2025-11-29 21:29:00.973 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:29:00.980 +03:30 INF] HTTP GET /health responded 200 in 9.1744 ms
+[2025-11-29 21:30:00.967 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:30:00.968 +03:30 INF] HTTP GET /health responded 200 in 7.5628 ms
+[2025-11-29 21:31:00.964 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:31:00.966 +03:30 INF] HTTP GET /health responded 200 in 7.3922 ms
+[2025-11-29 21:32:00.955 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:32:00.956 +03:30 INF] HTTP GET /health responded 200 in 3.1166 ms
+[2025-11-29 21:33:00.970 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:33:00.973 +03:30 INF] HTTP GET /health responded 200 in 8.2146 ms
+[2025-11-29 21:34:00.983 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:34:00.988 +03:30 INF] HTTP GET /health responded 200 in 34.0277 ms
+[2025-11-29 21:35:00.960 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:35:00.962 +03:30 INF] HTTP GET /health responded 200 in 8.0510 ms
+[2025-11-29 21:36:00.953 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:36:00.956 +03:30 INF] HTTP GET /health responded 200 in 6.8819 ms
+[2025-11-29 21:37:00.961 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:37:00.964 +03:30 INF] HTTP GET /health responded 200 in 7.4541 ms
+[2025-11-29 21:38:00.958 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:38:00.964 +03:30 INF] HTTP GET /health responded 200 in 13.4549 ms
+[2025-11-29 21:39:00.951 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:39:00.957 +03:30 INF] HTTP GET /health responded 200 in 12.4038 ms
+[2025-11-29 21:40:00.950 +03:30 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:40:00.952 +03:30 INF] HTTP GET /health responded 200 in 7.7799 ms
+[2025-11-29 21:41:00.959 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:41:00.984 +03:30 INF] HTTP GET /health responded 200 in 28.5261 ms
+[2025-11-29 21:42:00.951 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:42:00.954 +03:30 INF] HTTP GET /health responded 200 in 6.7298 ms
+[2025-11-29 21:43:01.270 +03:30 INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:43:01.282 +03:30 INF] HTTP GET /health responded 200 in 26.2128 ms
+[2025-11-29 21:44:00.954 +03:30 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:44:00.958 +03:30 INF] HTTP GET /health responded 200 in 14.6905 ms
+[2025-11-29 21:45:00.958 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:45:00.963 +03:30 INF] HTTP GET /health responded 200 in 11.9966 ms
+[2025-11-29 21:46:00.947 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:46:00.954 +03:30 INF] HTTP GET /health responded 200 in 14.2840 ms
+[2025-11-29 21:47:00.944 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:47:00.946 +03:30 INF] HTTP GET /health responded 200 in 8.3629 ms
+[2025-11-29 21:48:00.946 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:48:00.952 +03:30 INF] HTTP GET /health responded 200 in 12.8356 ms
+[2025-11-29 21:49:00.950 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:49:00.954 +03:30 INF] HTTP GET /health responded 200 in 8.9719 ms
+[2025-11-29 21:50:00.952 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:50:00.958 +03:30 INF] HTTP GET /health responded 200 in 13.5008 ms
+[2025-11-29 21:51:00.942 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:51:00.946 +03:30 INF] HTTP GET /health responded 200 in 10.1974 ms
+[2025-11-29 21:52:00.941 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:52:00.946 +03:30 INF] HTTP GET /health responded 200 in 11.2675 ms
+[2025-11-29 21:53:00.947 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:53:00.954 +03:30 INF] HTTP GET /health responded 200 in 14.2974 ms
+[2025-11-29 21:54:00.947 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:54:00.949 +03:30 INF] HTTP GET /health responded 200 in 8.4893 ms
+[2025-11-29 21:55:00.938 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:55:00.946 +03:30 INF] HTTP GET /health responded 200 in 9.1895 ms
+[2025-11-29 21:56:00.935 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:56:00.939 +03:30 INF] HTTP GET /health responded 200 in 10.5624 ms
+[2025-11-29 21:57:00.940 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:57:00.943 +03:30 INF] HTTP GET /health responded 200 in 7.3371 ms
+[2025-11-29 21:58:00.935 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:58:00.943 +03:30 INF] HTTP GET /health responded 200 in 9.5122 ms
+[2025-11-29 21:59:00.939 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 21:59:00.941 +03:30 INF] HTTP GET /health responded 200 in 8.0247 ms
+[2025-11-29 22:00:00.929 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:00:00.938 +03:30 INF] HTTP GET /health responded 200 in 11.8782 ms
+[2025-11-29 22:01:00.939 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:01:00.942 +03:30 INF] HTTP GET /health responded 200 in 6.6852 ms
+[2025-11-29 22:02:00.937 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:02:00.939 +03:30 INF] HTTP GET /health responded 200 in 6.5118 ms
+[2025-11-29 22:03:00.936 +03:30 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:03:00.942 +03:30 INF] HTTP GET /health responded 200 in 12.7833 ms
+[2025-11-29 22:04:00.936 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:04:00.939 +03:30 INF] HTTP GET /health responded 200 in 7.1036 ms
+[2025-11-29 22:05:00.943 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:05:00.947 +03:30 INF] HTTP GET /health responded 200 in 7.6007 ms
+[2025-11-29 22:06:00.936 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:06:00.939 +03:30 INF] HTTP GET /health responded 200 in 7.3177 ms
+[2025-11-29 22:07:00.926 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:07:00.930 +03:30 INF] HTTP GET /health responded 200 in 10.0077 ms
+[2025-11-29 22:08:00.936 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:08:00.940 +03:30 INF] HTTP GET /health responded 200 in 8.1052 ms
+[2025-11-29 22:09:00.937 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:09:00.940 +03:30 INF] HTTP GET /health responded 200 in 6.4472 ms
+[2025-11-29 22:10:00.931 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:10:00.936 +03:30 INF] HTTP GET /health responded 200 in 7.9229 ms
+[2025-11-29 22:11:00.931 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:11:00.936 +03:30 INF] HTTP GET /health responded 200 in 10.9922 ms
+[2025-11-29 22:12:00.926 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:12:00.930 +03:30 INF] HTTP GET /health responded 200 in 10.4722 ms
+[2025-11-29 22:13:01.243 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:13:01.247 +03:30 INF] HTTP GET /health responded 200 in 6.4254 ms
+[2025-11-29 22:14:00.933 +03:30 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:14:00.935 +03:30 INF] HTTP GET /health responded 200 in 8.2662 ms
+[2025-11-29 22:15:00.920 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:15:00.923 +03:30 INF] HTTP GET /health responded 200 in 7.3000 ms
+[2025-11-29 22:16:00.917 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:16:00.927 +03:30 INF] HTTP GET /health responded 200 in 13.2633 ms
+[2025-11-29 22:17:00.937 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:17:00.942 +03:30 INF] HTTP GET /health responded 200 in 7.8268 ms
+[2025-11-29 22:18:00.929 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:18:00.935 +03:30 INF] HTTP GET /health responded 200 in 8.8073 ms
+[2025-11-29 22:19:00.924 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:19:00.926 +03:30 INF] HTTP GET /health responded 200 in 7.3035 ms
+[2025-11-29 22:20:00.924 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:20:00.929 +03:30 INF] HTTP GET /health responded 200 in 11.6770 ms
+[2025-11-29 22:21:00.929 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:21:00.932 +03:30 INF] HTTP GET /health responded 200 in 6.2127 ms
+[2025-11-29 22:22:00.922 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:22:00.927 +03:30 INF] HTTP GET /health responded 200 in 9.9896 ms
+[2025-11-29 22:23:00.921 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:23:00.925 +03:30 INF] HTTP GET /health responded 200 in 7.9419 ms
+[2025-11-29 22:24:00.919 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:24:00.920 +03:30 INF] HTTP GET /health responded 200 in 6.8782 ms
+[2025-11-29 22:25:00.911 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:25:00.914 +03:30 INF] HTTP GET /health responded 200 in 6.3711 ms
+[2025-11-29 22:26:00.920 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:26:00.926 +03:30 INF] HTTP GET /health responded 200 in 8.1859 ms
+[2025-11-29 22:27:00.920 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:27:00.926 +03:30 INF] HTTP GET /health responded 200 in 10.3070 ms
+[2025-11-29 22:28:00.918 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:28:00.930 +03:30 INF] HTTP GET /health responded 200 in 17.6753 ms
+[2025-11-29 22:29:00.906 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:29:00.908 +03:30 INF] HTTP GET /health responded 200 in 5.9263 ms
+[2025-11-29 22:30:00.917 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:30:00.920 +03:30 INF] HTTP GET /health responded 200 in 7.4470 ms
+[2025-11-29 22:31:00.917 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:31:00.920 +03:30 INF] HTTP GET /health responded 200 in 6.6606 ms
+[2025-11-29 22:32:00.914 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:32:00.918 +03:30 INF] HTTP GET /health responded 200 in 7.7314 ms
+[2025-11-29 22:33:00.926 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:33:00.933 +03:30 INF] HTTP GET /health responded 200 in 14.4370 ms
+[2025-11-29 22:34:00.924 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:34:00.928 +03:30 INF] HTTP GET /health responded 200 in 7.2364 ms
+[2025-11-29 22:35:00.921 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:35:00.933 +03:30 INF] HTTP GET /health responded 200 in 18.5273 ms
+[2025-11-29 22:36:00.918 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:36:00.922 +03:30 INF] HTTP GET /health responded 200 in 7.5067 ms
+[2025-11-29 22:37:00.922 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:37:00.924 +03:30 INF] HTTP GET /health responded 200 in 7.1204 ms
+[2025-11-29 22:38:00.922 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:38:00.930 +03:30 INF] HTTP GET /health responded 200 in 9.6332 ms
+[2025-11-29 22:39:00.918 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:39:00.921 +03:30 INF] HTTP GET /health responded 200 in 6.8539 ms
+[2025-11-29 22:40:00.909 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:40:00.912 +03:30 INF] HTTP GET /health responded 200 in 7.4031 ms
+[2025-11-29 22:41:00.906 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:41:00.913 +03:30 INF] HTTP GET /health responded 200 in 9.8944 ms
+[2025-11-29 22:42:00.918 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:42:00.920 +03:30 INF] HTTP GET /health responded 200 in 6.5473 ms
+[2025-11-29 22:43:01.249 +03:30 INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:43:01.261 +03:30 INF] HTTP GET /health responded 200 in 36.5805 ms
+[2025-11-29 22:44:00.910 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:44:00.916 +03:30 INF] HTTP GET /health responded 200 in 7.6247 ms
+[2025-11-29 22:45:00.911 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:45:00.916 +03:30 INF] HTTP GET /health responded 200 in 11.5960 ms
+[2025-11-29 22:46:00.921 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:46:00.924 +03:30 INF] HTTP GET /health responded 200 in 7.0703 ms
+[2025-11-29 22:47:00.914 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:47:00.917 +03:30 INF] HTTP GET /health responded 200 in 6.3999 ms
+[2025-11-29 22:48:00.910 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:48:00.913 +03:30 INF] HTTP GET /health responded 200 in 9.2529 ms
+[2025-11-29 22:49:00.915 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:49:00.916 +03:30 INF] HTTP GET /health responded 200 in 4.5414 ms
+[2025-11-29 22:50:00.921 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:50:00.928 +03:30 INF] HTTP GET /health responded 200 in 11.4532 ms
+[2025-11-29 22:51:00.915 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:51:00.918 +03:30 INF] HTTP GET /health responded 200 in 7.1811 ms
+[2025-11-29 22:52:00.911 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:52:00.919 +03:30 INF] HTTP GET /health responded 200 in 12.4614 ms
+[2025-11-29 22:53:00.910 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:53:00.917 +03:30 INF] HTTP GET /health responded 200 in 8.8078 ms
+[2025-11-29 22:54:00.914 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:54:00.916 +03:30 INF] HTTP GET /health responded 200 in 7.3530 ms
+[2025-11-29 22:55:00.911 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:55:00.918 +03:30 INF] HTTP GET /health responded 200 in 12.3074 ms
+[2025-11-29 22:56:00.905 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:56:00.908 +03:30 INF] HTTP GET /health responded 200 in 6.8454 ms
+[2025-11-29 22:57:00.917 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:57:00.920 +03:30 INF] HTTP GET /health responded 200 in 6.8944 ms
+[2025-11-29 22:58:00.910 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:58:00.912 +03:30 INF] HTTP GET /health responded 200 in 10.0963 ms
+[2025-11-29 22:59:00.910 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 22:59:00.914 +03:30 INF] HTTP GET /health responded 200 in 8.1658 ms
+[2025-11-29 23:00:00.904 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:00:00.909 +03:30 INF] HTTP GET /health responded 200 in 11.0717 ms
+[2025-11-29 23:01:00.917 +03:30 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:01:00.923 +03:30 INF] HTTP GET /health responded 200 in 13.0163 ms
+[2025-11-29 23:02:00.916 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:02:00.919 +03:30 INF] HTTP GET /health responded 200 in 6.9433 ms
+[2025-11-29 23:03:00.936 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:03:00.938 +03:30 INF] HTTP GET /health responded 200 in 31.0698 ms
+[2025-11-29 23:04:00.905 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:04:00.911 +03:30 INF] HTTP GET /health responded 200 in 7.8417 ms
+[2025-11-29 23:05:00.900 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:05:00.905 +03:30 INF] HTTP GET /health responded 200 in 6.7420 ms
+[2025-11-29 23:06:00.911 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:06:00.914 +03:30 INF] HTTP GET /health responded 200 in 6.4784 ms
+[2025-11-29 23:07:00.915 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:07:00.921 +03:30 INF] HTTP GET /health responded 200 in 10.3303 ms
+[2025-11-29 23:08:00.903 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:08:00.906 +03:30 INF] HTTP GET /health responded 200 in 7.7690 ms
+[2025-11-29 23:09:00.906 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:09:00.912 +03:30 INF] HTTP GET /health responded 200 in 12.0346 ms
+[2025-11-29 23:10:00.939 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:10:00.944 +03:30 INF] HTTP GET /health responded 200 in 42.7321 ms
+[2025-11-29 23:11:00.909 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:11:00.914 +03:30 INF] HTTP GET /health responded 200 in 10.8672 ms
+[2025-11-29 23:12:00.905 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:12:00.913 +03:30 INF] HTTP GET /health responded 200 in 8.9507 ms
+[2025-11-29 23:13:01.235 +03:30 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:13:01.241 +03:30 INF] HTTP GET /health responded 200 in 24.8614 ms
+[2025-11-29 23:14:00.909 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:14:00.913 +03:30 INF] HTTP GET /health responded 200 in 6.1257 ms
+[2025-11-29 23:15:00.909 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:15:00.911 +03:30 INF] HTTP GET /health responded 200 in 7.7214 ms
+[2025-11-29 23:16:00.900 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:16:00.905 +03:30 INF] HTTP GET /health responded 200 in 6.9934 ms
+[2025-11-29 23:17:00.900 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:17:00.905 +03:30 INF] HTTP GET /health responded 200 in 7.4688 ms
+[2025-11-29 23:18:00.914 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:18:00.916 +03:30 INF] HTTP GET /health responded 200 in 7.9672 ms
+[2025-11-29 23:19:00.907 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:19:00.913 +03:30 INF] HTTP GET /health responded 200 in 8.2034 ms
+[2025-11-29 23:20:00.904 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:20:00.908 +03:30 INF] HTTP GET /health responded 200 in 7.5601 ms
+[2025-11-29 23:21:00.899 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:21:00.906 +03:30 INF] HTTP GET /health responded 200 in 13.5904 ms
+[2025-11-29 23:22:00.910 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:22:00.913 +03:30 INF] HTTP GET /health responded 200 in 6.2901 ms
+[2025-11-29 23:23:00.919 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:23:00.921 +03:30 INF] HTTP GET /health responded 200 in 28.3425 ms
+[2025-11-29 23:24:00.905 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:24:00.909 +03:30 INF] HTTP GET /health responded 200 in 7.4977 ms
+[2025-11-29 23:25:00.899 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:25:00.905 +03:30 INF] HTTP GET /health responded 200 in 7.7151 ms
+[2025-11-29 23:26:00.907 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:26:00.908 +03:30 INF] HTTP GET /health responded 200 in 2.8259 ms
+[2025-11-29 23:27:00.903 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:27:00.906 +03:30 INF] HTTP GET /health responded 200 in 6.2226 ms
+[2025-11-29 23:28:00.903 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:28:00.938 +03:30 INF] HTTP GET /health responded 200 in 39.3791 ms
+[2025-11-29 23:29:00.905 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:29:00.908 +03:30 INF] HTTP GET /health responded 200 in 9.7869 ms
+[2025-11-29 23:30:00.908 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:30:00.911 +03:30 INF] HTTP GET /health responded 200 in 7.6022 ms
+[2025-11-29 23:31:00.910 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:31:00.913 +03:30 INF] HTTP GET /health responded 200 in 6.8436 ms
+[2025-11-29 23:32:00.927 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:32:00.931 +03:30 INF] HTTP GET /health responded 200 in 40.9127 ms
+[2025-11-29 23:33:00.912 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:33:00.917 +03:30 INF] HTTP GET /health responded 200 in 8.5312 ms
+[2025-11-29 23:34:00.907 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:34:00.912 +03:30 INF] HTTP GET /health responded 200 in 6.8249 ms
+[2025-11-29 23:35:00.910 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:35:00.914 +03:30 INF] HTTP GET /health responded 200 in 7.2879 ms
+[2025-11-29 23:36:00.893 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:36:00.900 +03:30 INF] HTTP GET /health responded 200 in 9.0024 ms
+[2025-11-29 23:37:00.899 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:37:00.902 +03:30 INF] HTTP GET /health responded 200 in 6.5117 ms
+[2025-11-29 23:38:00.904 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:38:00.909 +03:30 INF] HTTP GET /health responded 200 in 8.6038 ms
+[2025-11-29 23:39:00.906 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:39:00.910 +03:30 INF] HTTP GET /health responded 200 in 6.8454 ms
+[2025-11-29 23:40:00.902 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:40:00.910 +03:30 INF] HTTP GET /health responded 200 in 11.2882 ms
+[2025-11-29 23:41:00.897 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:41:00.902 +03:30 INF] HTTP GET /health responded 200 in 6.4745 ms
+[2025-11-29 23:42:00.911 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:42:00.914 +03:30 INF] HTTP GET /health responded 200 in 6.3955 ms
+[2025-11-29 23:43:01.213 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:43:01.218 +03:30 INF] HTTP GET /health responded 200 in 5.8590 ms
+[2025-11-29 23:44:00.899 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:44:00.903 +03:30 INF] HTTP GET /health responded 200 in 6.9111 ms
+[2025-11-29 23:45:00.892 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:45:00.895 +03:30 INF] HTTP GET /health responded 200 in 3.5441 ms
+[2025-11-29 23:46:00.907 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:46:00.910 +03:30 INF] HTTP GET /health responded 200 in 7.9663 ms
+[2025-11-29 23:47:00.900 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:47:00.906 +03:30 INF] HTTP GET /health responded 200 in 7.8825 ms
+[2025-11-29 23:48:00.901 +03:30 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:48:00.903 +03:30 INF] HTTP GET /health responded 200 in 8.5135 ms
+[2025-11-29 23:49:00.896 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:49:00.900 +03:30 INF] HTTP GET /health responded 200 in 7.5993 ms
+[2025-11-29 23:50:00.895 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:50:00.902 +03:30 INF] HTTP GET /health responded 200 in 9.9509 ms
+[2025-11-29 23:51:00.907 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:51:00.909 +03:30 INF] HTTP GET /health responded 200 in 8.1490 ms
+[2025-11-29 23:52:00.900 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:52:00.902 +03:30 INF] HTTP GET /health responded 200 in 6.6808 ms
+[2025-11-29 23:53:00.902 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:53:00.909 +03:30 INF] HTTP GET /health responded 200 in 13.7232 ms
+[2025-11-29 23:54:00.896 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:54:00.900 +03:30 INF] HTTP GET /health responded 200 in 8.4610 ms
+[2025-11-29 23:55:01.219 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:55:01.223 +03:30 INF] HTTP GET /health responded 200 in 7.2203 ms
+[2025-11-29 23:56:00.893 +03:30 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:56:00.896 +03:30 INF] HTTP GET /health responded 200 in 6.9100 ms
+[2025-11-29 23:57:00.896 +03:30 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:57:00.901 +03:30 INF] HTTP GET /health responded 200 in 5.7174 ms
+[2025-11-29 23:58:00.904 +03:30 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:58:00.909 +03:30 INF] HTTP GET /health responded 200 in 10.8197 ms
+[2025-11-29 23:59:00.902 +03:30 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT 1
+[2025-11-29 23:59:00.906 +03:30 INF] HTTP GET /health responded 200 in 7.0829 ms
